@@ -4,6 +4,7 @@
     background-color: #01BFFF;
     overflow: hidden;
     margin-bottom: 10px;
+
 }
 
 /* Style the links inside the navigation bar */
@@ -22,15 +23,20 @@
     color: black;
 }
 
+
 .bigEventBanner{
     background-color: #c2d4dd;
     text-align: center;
     text-decoration: none;
     border-radius: 8px;
     font-size: 50px;
-    padding: 175px;
+    padding: 50px;
 
+    background-image: url("../img/byron-bay-discovery-park-01.jpg");
+    background-size: cover;
+    background-position: center;
 }
+
 
 .container{
     width: 100%;
