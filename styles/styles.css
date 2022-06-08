@@ -4,28 +4,18 @@
     background-color: #01BFFF;
     overflow: hidden;
     margin-bottom: 10px;
-    border:1px solid #ccc;
-    border-width:1px 0;
-    list-style:none;
-    margin:0;
-    padding:0;
-    text-align:center;
-    font-family: 'Quicksand', sans-serif;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
+    float: left;
     color: #f2f2f2;
     text-align: center;
     padding: 20px;;
     text-decoration: none;
-    font-size: 40px;
-    display:inline-block;
+    font-size: 17px;
 }
 
-.topnav li {
-    display:inline;
-}
 /* Change the color of links on hover */
 .topnav a:hover {
     background-color: #ddd;
