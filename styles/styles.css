@@ -5,6 +5,7 @@
     overflow: hidden;
     margin-bottom: 10px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     border:1px solid #ccc;
@@ -15,6 +16,8 @@
     text-align:center;
     font-family: 'Quicksand', sans-serif;
 >>>>>>> parent of 1eb60a6 (Revert "navigation bar")
+=======
+>>>>>>> parent of de7bcac (Revert "Added more placeholders")
 }
 
 /* Style the links inside the navigation bar */
@@ -36,7 +39,7 @@
     color: black;
 }
 
-
+/* Big banner in the home page */
 .bigEventBanner{
     background-color: #c2d4dd;
     text-align: center;
@@ -50,13 +53,11 @@
     background-position: center;
 }
 
-
+/* Text in the big banner */
 #bigBanner {
     text-decoration: none;
     color: #ddd;
 }
-
-
 
 .container{
     width: 100%;
@@ -107,7 +108,7 @@
     line-height: 2rem;
 }
 
-.eventGrid{
+.itemGrid{
     margin-top: 50px;
     width: 100%;
     display: grid;
@@ -116,10 +117,20 @@
 }
 
 footer {
-    text-align: center;
+/*     text-align: center;
     padding: 3px;
+    margin: 1% 0 0;
+    background-color: #01BFFF;
+    color: white; */
+
+
+    
+    left: 0;
+    bottom: 0;
+    width: 100%;
     background-color: #01BFFF;
     color: white;
+    text-align: center;
 }
 
 article a{
