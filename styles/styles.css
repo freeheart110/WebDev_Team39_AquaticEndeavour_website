@@ -1,3 +1,11 @@
+html, body {
+    margin: 0;
+    padding: 0;
+
+    /* Fix height to stick footer */
+    min-height: 100vh;
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
     font-weight: bold;
@@ -114,6 +122,14 @@ footer {
     background-color: #01BFFF;
     color: white;
     text-align: center;
+
+    /* Stick footer to bottom of content */
+    position: sticky;
+    top: 100vh;
+}
+
+footer p {
+    margin-bottom: 0;
 }
 
 article a{
