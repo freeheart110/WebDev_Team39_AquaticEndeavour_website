@@ -1,9 +1,13 @@
 /* Add a black background color to the top navigation */
 .topnav {
+    width: 100%;
     font-weight: bold;
     background-color: #01BFFF;
     overflow: hidden;
     margin-bottom: 10px;
+    position: fixed;
+    z-index: 1;
+
 }
 
 /* Style the links inside the navigation bar */
@@ -24,6 +28,7 @@
 
 /* Big banner in the home page */
 .bigEventBanner{
+    margin-top: 75px;
     background-color: #c2d4dd;
     text-align: center;
     text-decoration: none;
