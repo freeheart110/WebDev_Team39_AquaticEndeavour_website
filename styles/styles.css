@@ -34,6 +34,9 @@
     background-image: url("../img/byron-bay-discovery-park-01.jpg");
     background-size: cover;
     background-position: center;
+    /* adding animation for bigEventBanner */
+    animation-name: bigBanner-animation;
+    animation-duration: 5s;
 }
 
 /* Text in the big banner */
@@ -123,6 +126,11 @@ article a{
 }
 
 
+/* adding animation for bigEventBanner */
+@keyframes bigBanner-animation {
+    from {opacity: 20%;}
+    to {opacity: 100%;}
+}
 
 
 
