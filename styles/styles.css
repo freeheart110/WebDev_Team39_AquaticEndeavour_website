@@ -60,6 +60,16 @@ body {
     margin: 0 auto;
 }
 
+/* bottom marging for tickets page */
+.container.tickets {
+    margin-bottom: 40px;
+}
+
+/* bottom marging for events page */
+.container.events {
+    margin-bottom: 40px;
+}
+
 .item {
     width: 100%;
     border-radius: 8px;
