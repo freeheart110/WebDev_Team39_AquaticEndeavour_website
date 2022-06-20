@@ -1,4 +1,15 @@
-html,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    /* Font size is deliberately set to 62.5% so that 1 rem = 10px for scaling purposes */
+    font-size: 62.5%;
+}
+
+
 body {
     margin: 0;
     padding: 0;
@@ -13,7 +24,7 @@ body {
     font-weight: bold;
     background-color: #0096c7;
     overflow: hidden;
-    margin-bottom: 10px;
+    margin-bottom: 1.6rem;
 }
 
 /* Style the links inside the navigation bar */
@@ -21,10 +32,9 @@ body {
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 20px;
-    ;
+    padding: 2rem;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 1.7rem;
 }
 
 /* Change the color of links on hover */
@@ -38,9 +48,9 @@ body {
     background-color: #c2d4dd;
     text-align: center;
     text-decoration: none;
-    border-radius: 8px;
-    font-size: 50px;
-    padding: 50px;
+    border-radius: 0.8rem;
+    font-size: 5rem;
+    padding: 5rem;
 
     background-image: url("../images/byron-bay-discovery-park-01.jpg");
     background-size: cover;
@@ -62,19 +72,19 @@ body {
 
 /* bottom marging for tickets page */
 .container.tickets {
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
 }
 
 /* bottom marging for events page */
 .container.events {
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
 }
 
 .item {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 0.8rem;
     background-color: #caf0f8;
-    padding: 10px;
+    padding: 1rem;
     overflow: hidden;
 }
 
@@ -85,8 +95,8 @@ body {
 
 .item img {
     width: 100%;
-    height: 300px;
-    border-radius: 4px;
+    height: 30rem;
+    border-radius: 0.4rem;
 }
 
 .item .flexContainer {
@@ -97,7 +107,7 @@ body {
 
 .item .title {
     color: rgb(1, 1, 1);
-    margin: 20px 10px 0 0;
+    margin: 2rem 1rem 0 0;
     font-size: 1.8rem;
     font-weight: 400;
 }
@@ -105,22 +115,22 @@ body {
 .itemData {
     color: rgb(1, 1, 1);
     display: block;
-    margin-top: 10px;
+    margin-top: 1rem;
     font-size: 1.1rem;
     letter-spacing: 0.05rem;
     line-height: 1.7rem;
 }
 
 .itemGrid {
-    margin-top: 50px;
+    margin-top: 5rem;
     width: 100%;
     display: grid;
-    grid-gap: 25px;
-    grid-template: auto / repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2.5rem;
+    grid-template: auto / repeat(auto-fit, minmax(30rem, 1fr));
 }
 
 .itemGrid li {
-    padding: 2px;
+    padding: 0.2rem;
     line-height: 1.4rem;
 }
 
@@ -132,8 +142,8 @@ body {
 .buy-now {
     background: #023e8a;
     color: #ffffff;
-    font-size: 20px;
-    padding: 10px 20px 10px 20px;
+    font-size: 2rem;
+    padding: 1rem 2rem 1rem 2rem;
     text-decoration: none;
     border: 0;
 }
@@ -146,22 +156,29 @@ body {
 }
 
 
-footer {
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #0096c7;
-    color: white;
-    text-align: center;
-    padding: 20px;
+/* News and Articles */
 
-    /* Stick footer to bottom of content */
-    position: sticky;
-    top: 100vh;
+.newsAndArticles{
+    margin: 5% 0 5%;
+    background-color: #caf0f8;
+    padding: 1%;
+    border-radius: 5px;
 }
 
-footer p {
-    margin-bottom: 0;
+.articleTitle{
+    margin: 0% 0 2%;
+}
+
+.articleTitle h2{
+    font-size: 200%;
+    font-weight: bold;
+}
+
+article{
+    margin: 0.75% 0 0.75%;
+    background-color: white;
+    padding: 1%;
+    border-radius: 5px;
 }
 
 article a {
@@ -170,21 +187,27 @@ article a {
     text-align: justify;
 }
 
+article a p{
+    font-size: 150%;
+}
 
 
 
-/* Make the website scalable and more responsive by resizing elements of the pages */
-@media(max-width: 700px) {
-    .topnav a {
-        font-size: 67.5%;
-    }
+/* Footer */
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #0096c7;
+    color: white;
+    text-align: center;
+    padding: 2rem;
 
-    .flexContainer h1 {
-        font-size: 50%;
-    }
+    /* Stick footer to bottom of content */
+    position: sticky;
+    top: 100vh;
+}
 
-    article a,
-    article p {
-        font-size: 80%;
-    }
+footer p {
+    margin-bottom: 0;
 }
