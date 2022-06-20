@@ -39,7 +39,7 @@
 /* Tablets */
 @media(min-width: 768px) and (max-width: 991px){
     .topnav a {
-        font-size: 1em;
+        font-size: 1.25em;
     }
 
     .bigEventBanner h2{
@@ -57,7 +57,7 @@
 /* mobile phones */
 @media (min-width: 480px) and (max-width: 767px){
     .topnav a {
-        font-size: 1em;
+        font-size: 1.25em;
     }
 
     .bigEventBanner h2{
@@ -75,7 +75,7 @@
 /* smaller devices*/
 @media (min-width: 320px) and (max-width: 479px){
     .topnav a {
-        font-size: 1em;
+        font-size: 1.25em;
     }
 
     .bigEventBanner h2{
