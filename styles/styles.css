@@ -28,13 +28,18 @@ body {
 }
 
 .contentWrapper{
-    margin: 5% 5% 5%;
+    margin: 0% 5% 3%;
     background-color: #caf0f8;
     padding: 1%;
     border-radius: 5px;
 }
 
-#bigBannerWrapper{
+.contentWrapper h1{
+    margin: 1%;
+    font-size: 200%;
+}
+
+#noBG{
     background-color: transparent;
 }
 
@@ -81,7 +86,7 @@ body {
 #bigBanner {
     margin: 0 5% 0;
     text-decoration: none;
-    color: #ddd;
+    color: rgb(255, 255, 255);
 }
 
 /* bottom marging for tickets page */
@@ -97,7 +102,7 @@ body {
 .item {
     width: 100%;
     border-radius: 0.8rem;
-    background-color: #caf0f8;
+    background-color: #ffffff;
     padding: 1rem;
     overflow: hidden;
 }
@@ -113,24 +118,30 @@ body {
     border-radius: 0.4rem;
 }
 
-.item .flexContainer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .item .title {
     color: rgb(1, 1, 1);
-    margin: 2rem 1rem 0 0;
-    font-size: 1.8rem;
-    font-weight: 400;
+    margin: 5% 0 0;
+    font-size: 200%;
+    font-weight:bold;
+}
+
+.item:hover{
+    width: 100%;
+    border-radius: 0.8rem;
+    background-color: #0096c7;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.item:hover a h1, .item:hover a p{
+    color: #ffffff;
 }
 
 .itemData {
     color: rgb(1, 1, 1);
     display: block;
     margin-top: 1rem;
-    font-size: 1.1rem;
+    font-size: 150%;
     letter-spacing: 0.05rem;
     line-height: 1.7rem;
 }
@@ -196,7 +207,10 @@ article a p{
     font-size: 150%;
 }
 
-
+article:hover, article:hover a{
+    color: #f2f2f2;
+    background-color: #0077b6;
+}
 
 /* Footer */
 footer {
@@ -215,4 +229,5 @@ footer {
 
 footer p {
     margin-bottom: 0;
+    font-size: 150%;
 }

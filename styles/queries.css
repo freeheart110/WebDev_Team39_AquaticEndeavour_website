@@ -1,67 +1,91 @@
 /* Make the website scalable and more responsive by resizing elements of the pages */
 
 /* PCs and large screens*/
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
     .topnav a {
-        font-size: 100%;
+        font-size: 1.5em;
     }
 
     .bigEventBanner h2{
-        font-size: 100%;
+        font-size: 1.5em;
     }
 
-    .flexContainer h1 {
-        font-size: 100%;
-    }
-
-    article a,
-    article p {
-        font-size: 100%;
+    article a p, 
+    article a h2 {
+        font-size: 1.5em;
+        /* for testing purposes
+        color: chartreuse;*/
     }
 }
 
 /* Laptops */
-@media (max-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199px){
     .topnav a {
-        font-size: 75%;
+        font-size: 1.25em;
     }
 
     .bigEventBanner h2{
-        font-size: 75%;
-    }
-
-    .flexContainer h1 {
-        font-size: 75%;
+        font-size: 1.25em;
     }
 
     article a,
     article p {
-        font-size: 75%;
+        font-size: 1.25em;
+        /* for testing purposes
+        color:blueviolet;*/
     }
 }
 
 /* Tablets */
-@media(max-width: 768px) {
+@media(min-width: 768px) and (max-width: 991px){
     .topnav a {
-        font-size: 67.5%;
+        font-size: 1em;
     }
 
-    .flexContainer h1 {
-        font-size: 50%;
+    .bigEventBanner h2{
+        font-size: 1em;
     }
 
     article a,
     article p {
-        font-size: 80%;
+        font-size: 1em;
+        /* for testing purposes
+        color: blue;*/
     }
 }
 
 /* mobile phones */
-@media (max-width: 480px) {
-    
+@media (min-width: 480px) and (max-width: 767px){
+    .topnav a {
+        font-size: 1em;
+    }
+
+    .bigEventBanner h2{
+        font-size: 1em;
+    }
+
+    article a,
+    article p {
+        font-size: 1em;
+        /* for testing purposes
+        color:brown; */
+    }
 }
 
 /* smaller devices*/
-@media (max-width: 320px) {
-    
+@media (min-width: 320px) and (max-width: 479px){
+    .topnav a {
+        font-size: 1em;
+    }
+
+    .bigEventBanner h2{
+        font-size: 1em;
+    }
+
+    article a,
+    article p {
+        font-size: 1em;
+        /* for testing purposes
+        color:darkgoldenrod;*/
+    }
 }
