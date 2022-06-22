@@ -10,10 +10,15 @@ body {
 
 /* Add a black background color to the top navigation */
 .topnav {
+    width: 100%;
     font-weight: bold;
     background-color: #0096c7;
     overflow: hidden;
     margin-bottom: 10px;
+    position: fixed;
+    /* adding x y z styling */
+    z-index: 1;
+
 }
 
 /* Style the links inside the navigation bar */
@@ -34,6 +39,7 @@ body {
 }
 
 /* Big banner in the home page */
+
 .bigEventBanner {
     background-color: #c2d4dd;
     text-align: center;
@@ -45,6 +51,9 @@ body {
     background-image: url("../images/byron-bay-discovery-park-01.jpg");
     background-size: cover;
     background-position: center;
+    /* adding animation for bigEventBanner */
+    animation-name: bigBanner-animation;
+    animation-duration: 5s;
 }
 
 /* Text in the big banner */
@@ -171,6 +180,11 @@ article a {
 }
 
 
+/* adding animation for bigEventBanner */
+@keyframes bigBanner-animation {
+    from {opacity: 20%;}
+    to {opacity: 100%;}
+}
 
 
 /* Make the website scalable and more responsive by resizing elements of the pages */
