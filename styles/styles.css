@@ -1,8 +1,18 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* Fix height to stick footer */
+    min-height: 100vh;
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
     width: 100%;
     font-weight: bold;
-    background-color: #01BFFF;
+    background-color: #0096c7;
     overflow: hidden;
     margin-bottom: 10px;
     position: fixed;
@@ -16,20 +26,21 @@
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 20px;;
+    padding: 20px;
+    ;
     text-decoration: none;
     font-size: 17px;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #ddd;
+    background-color: #0077b6;
     color: black;
 }
 
 /* Big banner in the home page */
-.bigEventBanner{
-    margin-top: 75px;
+
+.bigEventBanner {
     background-color: #c2d4dd;
     text-align: center;
     text-decoration: none;
@@ -37,7 +48,7 @@
     font-size: 50px;
     padding: 50px;
 
-    background-image: url("../img/byron-bay-discovery-park-01.jpg");
+    background-image: url("../images/byron-bay-discovery-park-01.jpg");
     background-size: cover;
     background-position: center;
     /* adding animation for bigEventBanner */
@@ -51,56 +62,65 @@
     color: #ddd;
 }
 
-.container{
+.container {
     width: 100%;
     height: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.item{
-    width: 100%;
-    border-radius: 8px;
-    background-color: #c2d4dd;
-    padding: 10px;
-    overflow: hidden;
-    
+/* bottom marging for tickets page */
+.container.tickets {
+    margin-bottom: 40px;
 }
 
-.item a{
+/* bottom marging for events page */
+.container.events {
+    margin-bottom: 40px;
+}
+
+.item {
+    width: 100%;
+    border-radius: 8px;
+    background-color: #caf0f8;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.item a {
     text-decoration: none;
     color: rgb(1, 1, 1);
 }
 
-.item img{
+.item img {
     width: 100%;
     height: 300px;
     border-radius: 4px;
 }
 
-.item .flexContainer{
+.item .flexContainer {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.item .title{
+.item .title {
     color: rgb(1, 1, 1);
     margin: 20px 10px 0 0;
     font-size: 1.8rem;
     font-weight: 400;
 }
 
-.itemData{
+.itemData {
     color: rgb(1, 1, 1);
     display: block;
     margin-top: 10px;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     letter-spacing: 0.05rem;
-    line-height: 2rem;
+    line-height: 1.7rem;
 }
 
-.itemGrid{
+.itemGrid {
     margin-top: 50px;
     width: 100%;
     display: grid;
@@ -108,24 +128,52 @@
     grid-template: auto / repeat(auto-fit, minmax(300px, 1fr));
 }
 
+.itemGrid li {
+    padding: 2px;
+    line-height: 1.4rem;
+}
+
+.buy-container {
+    display: flex;
+    justify-content: center;
+}
+
+.buy-now {
+    background: #023e8a;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border: 0;
+}
+
+.buy-now:hover {
+    background: #0077b6;
+    color: #ffffff;
+    text-decoration: none;
+    border: 0;
+}
+
+
 footer {
-/*     text-align: center;
-    padding: 3px;
-    margin: 1% 0 0;
-    background-color: #01BFFF;
-    color: white; */
-
-
-    
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #01BFFF;
+    background-color: #0096c7;
     color: white;
     text-align: center;
+    padding: 20px;
+
+    /* Stick footer to bottom of content */
+    position: sticky;
+    top: 100vh;
 }
 
-article a{
+footer p {
+    margin-bottom: 0;
+}
+
+article a {
     text-decoration: none;
     color: rgb(1, 1, 1);
     text-align: justify;
@@ -139,7 +187,18 @@ article a{
 }
 
 
+/* Make the website scalable and more responsive by resizing elements of the pages */
+@media(max-width: 700px) {
+    .topnav a {
+        font-size: 67.5%;
+    }
 
-/* @media(max-width: 700px) {
-    
-} */
+    .flexContainer h1 {
+        font-size: 50%;
+    }
+
+    article a,
+    article p {
+        font-size: 80%;
+    }
+}
